@@ -9,7 +9,7 @@ function MovieForm() {
     director: "",
     description: "",
     poster_url: "",
-    category: "",
+    category: "",gift,
     discount: false,
     female_director: false,
   });
@@ -23,8 +23,7 @@ function MovieForm() {
       },
       body: JSON.stringify(formData),
     })
-      .then((response) => response.json())
-      .then((newMovie) => console.log(newMovie));
+      .then((response) => console.log(res));
   }
 
   function handleChange(e) {
